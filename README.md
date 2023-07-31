@@ -1,3 +1,19 @@
+# Developer Notes
+
+See original post for this tutorial: https://www.codingthesmartway.com/nestjs-for-absolute-beginners/
+
+- When the Header Content-Type was set to applicatoin/x-www-form-urlencoded, id was converted into a string. Changing to application/json and sending as raw JSON fixed the problem. 
+- DTO does not act as a Schema, and TypeScript doesn't prevent incorrect types from being posted. Setting the model type in Prisma should  prevent this  
+**Q** how to specify Content-Type and prevent POSTS that come from a different content type?  
+
+## Controllers
+The CoursesService is injected through the class constructor. Notice the use of the private syntax. This shorthand allows us to both declare and initialize the catsService member immediately in the same location.
+
+
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
